@@ -1,3 +1,5 @@
+import { redirect } from "next/navigation";
+
 export default function Home() {
-  return <iframe className="reference-site" title="Clara Daily English Games" src="/daily-english/index.html" />;
+  redirect("/login");
 }

@@ -33,9 +33,16 @@ yarn-error.log*
 
 # vercel
 .vercel
+/.vercel-cli-data/
+/.student-seed.json
+/.agents/
+/skills-lock.json
+/tsconfig.tsbuildinfo
 
 /dist/
 /.wrangler/
 /outputs/
 /work/
 /.site-package-staging/
+
+.vercel
