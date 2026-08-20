@@ -11,9 +11,11 @@ export async function POST(request: NextRequest) {
   }
 
   const normalized = normalizeName(name);
+  const enteredName = name.trim().replace(/\s+/g, " ");
   const rows = await db()<{ display_name: string }[]>`
     select display_name from students
-    where normalized_name = ${normalized} and is_active = true
+    where is_active = true
+      and (normalized_name = ${normalized} or display_name ilike ${`%${enteredName}%`})
     limit 1
   `;
   if (!rows[0]) {
