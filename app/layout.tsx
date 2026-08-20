@@ -13,16 +13,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Clara English Corner | SPM Speaking Practice",
+  title: "Teacher Clara English Corner | SPM Speaking Practice",
   description: "Friendly SPM speaking practice prompts, answer frames and confidence-building support.",
   openGraph: {
-    title: "Clara English Corner",
+    title: "Teacher Clara English Corner",
     description: "Speak with clarity. Shine with confidence.",
     images: ["/og.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Clara English Corner",
+    title: "Teacher Clara English Corner",
     description: "Speak with clarity. Shine with confidence.",
     images: ["/og.png"],
   },

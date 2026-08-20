@@ -196,7 +196,7 @@ const spmQuestions = [
     set: "Real",
     part: "Coming Soon",
     title: "Real SPM questions",
-    prompt: "Upload or paste your real SPM questions here, and Clara's site will turn them into practice cards.",
+    prompt: "Upload or paste your real SPM questions here, and Teacher Clara's site will turn them into practice cards.",
     bullets: ["source or year", "part and topic", "question prompt", "bullet points or answer guide"]
   }
 ];

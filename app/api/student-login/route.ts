@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
     limit 1
   `;
   if (!rows[0]) {
-    return NextResponse.json({ error: "Your name is not on Clara's active student list. Please contact Clara." }, { status: 401 });
+    return NextResponse.json({ error: "Your name is not on Teacher Clara's active student list. Please contact Teacher Clara." }, { status: 401 });
   }
 
   const response = NextResponse.json({ ok: true });

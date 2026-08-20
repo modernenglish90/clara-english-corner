@@ -1,5 +1,5 @@
 const phraseRows = [
-  ["课室里","May I come in, Clara?","Clara，我可以进来吗？","进课室前"],
+  ["课室里","May I come in, Teacher Clara?","Teacher Clara，我可以进来吗？","进课室前"],
   ["课室里","May I go to the toilet, please?","请问我可以去厕所吗？","课堂请求"],
   ["课室里","Can you repeat that, please?","请您再重复一次好吗？","听不清楚"],
   ["课室里","I don't understand this part.","我不明白这个部分。","问功课"],
@@ -159,7 +159,7 @@ const phraseRows = [
   ["电话信息","My phone is running out of battery.","我的手机快没电了。","电量不足"],
   ["电话信息","The internet connection is unstable.","网络连接不稳定。","网络问题"],
   ["电话信息","Let me check the group chat.","让我看看群聊。","查看信息"],
-  ["旅行酒店","I have a reservation under Clara.","我用 Clara 的名字订了房。","办理入住"],
+  ["旅行酒店","I have a reservation under Teacher Clara.","我用 Teacher Clara 的名字订了房。","办理入住"],
   ["旅行酒店","What time is check-in?","几点可以入住？","问入住时间"],
   ["旅行酒店","Is breakfast included?","有包括早餐吗？","问配套"],
   ["旅行酒店","Could we have an extra towel?","可以多给我们一条毛巾吗？","客房请求"],
@@ -215,7 +215,7 @@ const sceneRounds = [
 
 const roleplays = [
   ["Customer", "Buy milk tea with less sugar and pearls.", "Can I have one milk tea with less sugar and pearls, please?"],
-  ["Student", "Ask Clara to repeat the sentence.", "Can you repeat that, please?"],
+  ["Student", "Ask Teacher Clara to repeat the sentence.", "Can you repeat that, please?"],
   ["Customer", "Ask where the shampoo is.", "Where can I find shampoo?"],
   ["Friend", "Invite your friend to buy milk tea after school.", "Let's go for milk tea later."],
   ["Customer", "Ask for the bill at a restaurant.", "Can we have the bill, please?"],
@@ -246,7 +246,7 @@ const roleNames = {
 };
 
 const builderPresets = {
-  "课室里": { mission: "向老师或同学提出礼貌请求。", aLabel: "礼貌开头", bLabel: "课堂任务", a: ["May I", "Can I", "Could I"], b: ["come in, Clara?", "borrow your eraser?", "ask a question, please?"] },
+  "课室里": { mission: "向老师或同学提出礼貌请求。", aLabel: "礼貌开头", bLabel: "课堂任务", a: ["May I", "Can I", "Could I"], b: ["come in, Teacher Clara?", "borrow your eraser?", "ask a question, please?"] },
   "食堂": { mission: "在学校食堂清楚地点餐。", aLabel: "点餐开头", bLabel: "食物选择", a: ["Can I have", "I would like", "Could I get"], b: ["fried noodles, please.", "a cold drink, please.", "this meal with less chilli, please."] },
   "餐厅": { mission: "在餐厅点餐或提出要求。", aLabel: "服务开头", bLabel: "餐厅任务", a: ["Could we have", "Can I have", "I would like"], b: ["the menu, please.", "some water, please.", "chicken chop without onions, please."] },
   "买奶茶": { mission: "自由组合饮料、甜度和配料。", aLabel: "饮料开头", bLabel: "饮料组合", a: ["Can I have", "I would like", "Could I get"], b: ["a milk tea with less sugar, please.", "a green tea with no ice, please.", "a large chocolate drink with pearls, please."] },
