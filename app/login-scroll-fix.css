@@ -1,0 +1,6 @@
+/* Keep the student sign-in form reachable on shorter desktop screens. */
+.access-page {
+  padding: clamp(36px, 5vw, 80px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
