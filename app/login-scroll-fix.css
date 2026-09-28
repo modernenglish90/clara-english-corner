@@ -1,6 +1,14 @@
-/* Keep the student sign-in form reachable on shorter desktop screens. */
-.access-page {
-  padding: clamp(36px, 5vw, 80px);
-  overflow-x: hidden;
+/* Let the document, rather than a fixed-height nested element, scroll. */
+html:has(.access-page),
+body:has(.access-page) {
+  height: auto;
+  min-height: 100%;
   overflow-y: auto;
+}
+
+main.access-page {
+  height: auto;
+  min-height: 100dvh;
+  padding: clamp(28px, 3vw, 48px) clamp(28px, 5vw, 80px);
+  overflow: visible;
 }
